@@ -5,7 +5,7 @@
     },
     "extends": [
         "plugin:react/recommended",
-        "airbnb",
+        "airbnb-typescript",
         "plugin:@next/next/recommended",
         "next"
     ],
@@ -21,14 +21,5 @@
         "react",
         "@typescript-eslint"
     ],
-    "rules": {
-        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
-        "react/function-component-definition": [
-            "error",
-            {
-              "namedComponents": ["function-declaration", "arrow-function"],
-              "unnamedComponents": "arrow-function"
-            }
-          ]
-    }
+    "rules": {}
 }
