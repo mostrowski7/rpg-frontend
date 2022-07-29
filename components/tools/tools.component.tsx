@@ -4,7 +4,7 @@ import { PencilIcon } from "@heroicons/react/outline";
 import { Tool } from "./tools.enums";
 import { useState } from "react";
 
-const Tools = () => {
+export const Tools = () => {
   const [selectedTool, setSelectedTool] = useState<Tool>(Tool.Pen);
 
   const handleSelectTool = (tool: Tool) => {
@@ -22,5 +22,3 @@ const Tools = () => {
     </div>
   );
 };
-
-export default Tools;
