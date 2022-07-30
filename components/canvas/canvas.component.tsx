@@ -1,7 +1,7 @@
 import { MouseEvent, useState } from "react";
 import styles from "./canvas.styles";
 
-const Canvas = () => {
+export const Canvas = () => {
   const [coords, setCoords] = useState({ x: 0, y: 0 });
   const [mouseLeave, setMouseLeave] = useState(false);
   const [mouseDown, setMouseDown] = useState(false);
@@ -43,5 +43,3 @@ const Canvas = () => {
     </div>
   );
 };
-
-export default Canvas;
